@@ -108,6 +108,10 @@ main{
     padding-right: 70px;
 }
 
+.feature-description {
+    padding: 0 30px;
+}
+
 .teams-title{
     font-size: 2.8rem;
 }
@@ -151,7 +155,7 @@ main{
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-    width: 342px;
+    width: 300px;
     padding: 40px;
     text-align: center;
     position: relative;
@@ -160,6 +164,8 @@ main{
 
 .ten-years-badge h2{
     font-size: 4rem;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .ten-years-badge p{
@@ -232,7 +238,7 @@ main{
     }
 
     .ten-years-badge{
-        position: static;
+        position: relative;
         max-width: 300px;
     }
 
