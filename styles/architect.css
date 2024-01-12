@@ -92,7 +92,7 @@ main{
 
 /* Teams Styles */
 
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
@@ -103,8 +103,9 @@ main{
     gap: 1.5rem;
 }
 
-.teams-content{
-    padding: 0 70px;
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .teams-title{
@@ -147,6 +148,22 @@ main{
     margin-bottom: 10px;
 }
 
+/* Sponsors Style */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+
+.sponsors-img-container img{
+    width: 165px;
+}
+
 /* Responsive Medua Query */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
@@ -154,17 +171,24 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container {
+    .teams-container,
+    .facts-card-container, .sponsors-img-container {
         flex-direction: column;
     }   
     .teams-img-container{
         grid-template-columns: 1fr;
     }
 
-    .teams-content{
+    .teams-content, .facts-card-container{
         padding: 0 20px;
     }
-    
+
+    .facts-card-container{
+        gap: 20px
+    }
+    .facts-card-container .card{
+        padding: 10px 10px;
+    }
 }
 
 /* Tablet or Medium Device */
@@ -173,7 +197,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-container{
+    nav, .teams-container, .sponsors-img-container{
         flex-direction: column;
     }
     /* .teams-img-container {
