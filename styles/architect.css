@@ -6,7 +6,7 @@
 *{
     font-family: 'Sora', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    /* margin: 0; */
+    margin: 0;
 }
 
 .text-light-gray {
@@ -45,6 +45,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 nav > ul{
@@ -178,6 +179,7 @@ main{
 .facts-card-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 
 }
 .facts-card-container .card{
@@ -203,7 +205,17 @@ main{
 /* Sponsors Style */
 .sponsors{
     text-align: center;
+    margin-top: 50px;
 }
+
+.facts *, .sponsors *{
+    padding-bottom: 20px;
+}
+
+.facts{
+    margin-top: 50px;
+}
+
 .sponsors-img-container{
     margin-top: 50px;
     display: flex;
@@ -214,6 +226,23 @@ main{
 
 .sponsors-img-container img{
     width: 165px;
+}
+
+/* Footer Section */
+
+.copyright-text{
+    padding: 40px 400px;
+    max-width: 1140px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsive Medua Query */
@@ -252,6 +281,22 @@ main{
     .facts-card-container .card{
         padding: 10px 10px;
     }
+
+    .copyright-text {
+        padding: 30px 40px;
+        margin: 0px 10px;
+        margin-top: 50px;
+    }
+
+}
+
+
+h1, h2,h3,h4{
+    padding-bottom: 20px;
+}
+
+p, button{
+    padding-bottom: 20px;
 }
 
 /* Tablet or Medium Device */
@@ -260,11 +305,31 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-container, .sponsors-img-container, .feature{
+    nav, .teams-container, .facts-card-container, .sponsors-img-container, .feature{
         flex-direction: column;
     }
     /* .teams-img-container {
         grid-template-columns: 1fr;
     } */
-    
+
+    .facts-card-container{
+        gap: 10px;
+        margin: auto 10px;
+    }
+    .teams-img-container{
+        width: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyright-text {
+        padding: 50px 20px;
+        margin-bottom: 0;
+    }
+
+    footer{
+        margin: 0px 10px;
+        margin-top: 50px;
+    }
 }
